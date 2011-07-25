@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JaphexPortfolio</title>
+	<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&v2' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "jquery.min", "application" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<img src="/images/me.jpg" alt="Jamie Lawrence" id="me" />
+			<h1>Japhex | Jamie Lawrence</h1>
+			<span>Music | Design | Code | Gaming</span>
+			<ul></ul>
+		</header>
+		<a id="twitter" href="http://http://twitter.com/#!/japhex">@Japhex : </a>
+		<section id="content">
+			<%= yield %>
+		</section>
+		<aside id="promo">
+			<h2>My projects bro...</h2>
+			<ul>
+				<li><a href="#">twitGeek</a></li>
+				<li><a href="#">snipGeek</a></li>				
+			</ul>
+			<p id="about-me">
+				Hi. I'm Jamie Lawrence, or J. I'm a web developer and designer, passionate music lover, gamer and 
+				general dude from High Wycombe, UK. My skillset includes ASP.NET(C#), HTML(4/5), CSS(2/3), Javascript,
+			 	jQuery, Ruby on Rails and extended knowledge of client and server side applications. My career has
+				passed my by pretty quick so far, I currently work as a Team Leader in a Web Development department
+				for one of the UK's largest e-commerce platform providers. On this site you'll find anything me, the
+				main focus will most probably be code related, but hey I'm only human, so if you're a fellow developer
+				you might have to shift through some music and general rant related posts to get to other tastier
+				stuff.
+			</p>
+		</aside>
+		<footer id="footer">
+		</footer>		
+		<section id="social-links">
+			<ul>
+				<li><a href="http://www.facebook.com/japhex"><img src="/images/facebook.png" alt="My Facebook Page" /></a></li>
+				<li><a href="http://www.twitter.com/japhex"><img src="/images/twitter.png" alt="My Twitter Feed" /></a></li>
+				<li><a href="http://uk.linkedin.com/pub/jamie-lawrence/32/671/518"><img src="/images/linkedin.png" alt="My LinkedIn Profile" /></a></li>
+				<li><a href="https://github.com/japhex"><img src="/images/github.png" alt="My Github Repo" /></a></li>
+			</ul>
+		</section>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

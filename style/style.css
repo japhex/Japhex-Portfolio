@@ -1,0 +1,43 @@
+/* Reset Styles */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/* Main Styles */
+
+#wrapper {width:960px;margin:0 auto;}
+#header {height:320px;position:relative;border-bottom:1px solid #cecece;}
+#header #twitter, #header span {position:absolute;bottom:24px;right:14px;color:#000;font-family:'Goudy Bookletter 1911';text-transform:uppercase;font-size:0.8em;}
+#header span {bottom:8px;}
+#header #me {width:250px;position:absolute;top:30px;-moz-transform: scale(1) rotate(-20deg) translate(0px, 0px) skew(0deg, 0deg);-webkit-transform: scale(1) rotate(-20deg) translate(0px, 0px) skew(0deg, 0deg);}
+#header h1 {position:absolute;bottom:12px;left:180px;font-family:'Goudy Bookletter 1911';font-weight:normal;font-size:1.5em;text-transform:uppercase;}
+#header ul {width:100%;overflow:hidden;padding:11px 0 0 11px;}
+#header li {display:block;float:left;height:50px;width:50px;border-radius:5px;margin:1px;overflow:hidden;}
+#header li img {width:100px;}
+
+#content {min-height:500px;width:700px;float:left;}
+#content article {border-bottom:1px dashed #cecece;padding:10px 0;}
+#content h2, #content h3 {font-family:'Goudy Bookletter 1911';font-weight:normal;}
+#content h2 {font-size:4em;}
+#content h3 {font-size:1.3em;}
+#content section {margin:10px 2px;padding:5px;font-family:arial;border:1px dashed #cecece;border-radius:5px;background:#eee;padding:10px;}
+#content section p {padding:10px 0;font-size:0.9em;}
+#content section h4 {font-size:0.9em;text-transform:uppercase;}
+#content section strong {display:block;text-transform:uppercase;font-size:0.9em;font-weight:normal;text-decoration:underline;padding:5px 0;}
+#content section strong.invalid {color:red;}
+#content section strong.valid {color:green;} 
+#content footer {font-size:0.8em;text-transform:uppercase;padding-bottom:15px;border-bottom:1px dashed #cecece;}
+
+#promo {float:left;width:250px;margin:20px 0 0 10px;}
+#promo h2 {font-family:'Goudy Bookletter 1911';font-weight:normal;text-transform:uppercase;font-size:1.5em;width:240px;margin-bottom:5px;}
+#promo ul {overflow:hidden;text-align:right;padding-right:13px;border-radius:5px;padding:10px;}
+#promo li a {color:#666;padding:3px;text-decoration:none;font-family:arial;text-transform:lowercase;}
+#promo #about-me {margin:10px 0;text-transform:uppercase;font-family:arial;font-size:0.8em;padding:10px;}
+
+#footer {height:200px;}

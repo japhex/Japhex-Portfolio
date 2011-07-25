@@ -1,0 +1,32 @@
+<article>
+	<header>
+	  <hgroup>
+			<h2><%= @post.title %></h2>
+	    <h3><%= @post.date %></h3>
+	  </hgroup>
+	</header>
+	<section>
+  	<%=raw @post.content %>
+	</section>
+	<footer>
+		<%= link_to 'Edit', edit_post_path(@post) %> |
+		<%= link_to 'Back', posts_path %>
+	</footer>
+	<section id="comments">
+		<section id="new-comment">
+			<% form_for Comment.new do |f| %>
+			    <%= render "comments/form", :f => f %>
+			<% end %>				
+		</section>		
+		<% if @post.comments.any? %>
+			<% @post.comments.each do |f| %>
+				<div class="comment">
+					<h4><a href="http://<%= f.website %>"><%= f.name %></a></h4> <span><%= f.date %></span>
+					<p>
+						<%= f.comment %>
+					</p>
+				</div>	
+			<% end %>	
+		<% end %>
+	</section>
+</article>
