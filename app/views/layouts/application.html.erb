@@ -8,19 +8,17 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="user_nav">
-		  <% if current_user %>
-		    <%= link_to "Edit Profile", edit_user_path(:current) %> |
-		    <%= link_to "Logout", logout_path %>
-		  <% else %>
-		    <%= link_to "Register", new_user_path %> |
-		    <%= link_to "Login", login_path %>
-		  <% end %>
-		</div>		
+	<div id="wrapper">	
 		<header id="header">
-			<img src="/images/me.jpg" alt="Jamie Lawrence" id="me" />
+			<a href="/"><img src="/images/me.jpg" alt="Jamie Lawrence" id="me" /></a>
 			<h1>Japhex | Jamie Lawrence</h1>
+			<div id="user_nav">
+			  <% if current_user %>
+			    <%= link_to "Logout", logout_path, :class => 'auth-link' %>
+			  <% else %>
+			    <%= link_to "Login", login_path, :class => 'auth-link' %>
+			  <% end %>
+			</div>			
 			<span>Music | Design | Code | Gaming</span>
 			<ul></ul>
 		</header>
@@ -31,8 +29,8 @@
 		<aside id="promo">
 			<h2>My projects bro...</h2>
 			<ul>
-				<li><a href="#">twitGeek</a></li>
-				<li><a href="#">snipGeek</a></li>				
+				<li><a href="http://www.twitgeek.net" target="_blank">twitGeek</a></li>
+				<li><a href="http://snipgeek.heroku.com" target="_blank">snipGeek</a></li>				
 			</ul>
 			<p id="about-me">
 				Hi. I'm Jamie Lawrence, or J. I'm a web developer and designer, passionate music lover, gamer and 
