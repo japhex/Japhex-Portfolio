@@ -5,8 +5,8 @@ JaphexPortfolio::Application.routes.draw do
   match 'login' => "user_sessions#new",      :as => :login
   match 'logout' => "user_sessions#destroy", :as => :logout
   resources :users
-  
   root :to => "posts#index"
+  match '/:id' => 'posts#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

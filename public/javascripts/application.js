@@ -80,6 +80,16 @@ function initCommentsWatermarkClick(){
 		else {
 		}
 	});	
+	$('#comment_submit').click(function(){
+		$('#new-comment input, #new-comment textarea').each(function(){
+			if ($(this).hasClass('hascontent')){
+			}
+			else{
+				$(this).addClass('invalid');
+				return false;
+			}
+		});
+	});
 }
 
 function initMyTwitter(){

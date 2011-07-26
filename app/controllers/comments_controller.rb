@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_filter :require_user, :only => [:edit, :destroy, :index, :show]
   # GET /comments
   # GET /comments.xml
   def index
@@ -76,7 +77,7 @@ class CommentsController < ApplicationController
     @comment.destroy
 
     respond_to do |format|
-      format.html { redirect_to(comments_url) }
+      format.html { redirect_to(:back) }
       format.xml  { head :ok }
     end
   end

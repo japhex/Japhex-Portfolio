@@ -27,6 +27,9 @@
 					<p>
 						<%= f.comment %>
 					</p>
+					<% if current_user %>
+						<%= link_to 'Destroy', f, :confirm => 'Are you sure?', :method => :delete, :class => 'admin-link' %>
+					<% end %>
 				</div>	
 			<% end %>	
 		<% end %>

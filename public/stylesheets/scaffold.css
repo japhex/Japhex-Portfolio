@@ -42,6 +42,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #comments .comment h4 a {color:#666;text-decoration:none;font-style:italic;font-family:georgia;}
 #comments .comment span {display:block;float:left;font-style:italic;text-transform:lowercase;font-family:georgia;font-size:0.9em;position:absolute;top:8px;right:10px;color:#bebebe;}
 #comments .comment p {clear:left;padding:10px;background:#fff;border-radius:5px;text-transform:uppercase;font-size:0.7em;}
+.comment .admin-link {padding:10px;position:absolute;right:0;top:-9px;}
 
 #comments #new-comment {border:0;overflow:hidden;position:relative;width:505px;}
 #new-comment div {margin:3px 0;float:left;width:190px;}
@@ -50,6 +51,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #new-comment textarea {border:1px solid #ccc;border-radius:3px;color:#ccc;padding:8px 10px;margin:3px 0;width:290px;font-family:arial;font-size:0.7em;}
 #new-comment .hascontent {color:#000;}
 #new-comment #comment_submit {color:#000;clear:both;position:absolute;top:110px;width:183px;background:#999;}
+input.invalid {border:1px solid red;}
 
 #promo {float:left;width:250px;margin:20px 0 0 10px;}
 #promo h2 {font-family:'Goudy Bookletter 1911';font-weight:normal;text-transform:uppercase;font-size:1.5em;width:240px;margin-bottom:5px;}
