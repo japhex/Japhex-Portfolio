@@ -26,6 +26,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #content article {border-bottom:1px dashed #cecece;padding:10px 0;}
 #content h2, #content h3 {font-family:'Goudy Bookletter 1911';font-weight:normal;}
 #content h2 {font-size:4em;}
+#content h2 a {color:#000;text-decoration:none;}
 #content h3 {font-size:1.3em;}
 #content section {margin:10px 2px;padding:5px;font-family:arial;border:1px dashed #cecece;border-radius:5px;background:#eee;padding:10px;}
 #content section p {padding:10px 0;font-size:0.9em;}
@@ -33,7 +34,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #content section strong {display:block;text-transform:uppercase;font-size:0.9em;font-weight:normal;text-decoration:underline;padding:5px 0;}
 #content section strong.invalid {color:red;}
 #content section strong.valid {color:green;} 
-#content footer {font-size:0.8em;text-transform:uppercase;padding-bottom:15px;border-bottom:1px dashed #cecece;}
+#content footer {font-size:0.8em;text-transform:uppercase;padding-bottom:15px;border-bottom:1px dashed #cecece;overflow:hidden;}
 
 #content #comments {border:0;background:none;}
 #comments .comment {background:#dedede;border-radius:10px;padding:10px;position:relative;margin:20px 0;}
@@ -61,3 +62,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 #social-links a {}
 
 #footer {height:200px;}
+
+/* ADMIN SECTION */
+
+.admin-link {color:white;background:#666;padding:10px;border-radius:20px;text-decoration:none;margin:5px;display:block;float:left;}
+.new-post {background:#CECECE;color:black;text-transform:uppercase;font-family:arial;text-decoration:none;padding:10px;margin:10px;border-radius:20px;display:block;text-align:center;font-size:2em;}

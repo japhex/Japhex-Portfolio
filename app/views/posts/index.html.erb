@@ -2,19 +2,23 @@
 	<article>
 		<header>
 		  <hgroup>
-				<h2><%= post.title %></h2>
+				<h2><%= link_to post.title, post %></h2>
 		    <h3><%= post.date %></h3>
 		  </hgroup>
 		</header>
 		<section>
 	  	<%=raw post.content %>
 		</section>
+		<% if current_user %>
 		<footer>
-	    <%= link_to 'Show', post %>
-	    <%= link_to 'Edit', edit_post_path(post) %>
-			<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+	    <%= link_to 'Show', post, :class => 'admin-link' %>
+	    <%= link_to 'Edit', edit_post_path(post), :class => 'admin-link' %>
+			<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :class => 'admin-link' %>
 		</footer>
+		<% end %>
 	</article>
 <% end %>
 
-<%= link_to 'New Post', new_post_path %>
+<% if current_user %>
+	<%= link_to 'New Post', new_post_path, :class => 'new-post' %>
+<% end %>

@@ -9,8 +9,10 @@
   	<%=raw @post.content %>
 	</section>
 	<footer>
-		<%= link_to 'Edit', edit_post_path(@post) %> |
-		<%= link_to 'Back', posts_path %>
+		<% if current_user %>
+			<%= link_to 'Edit', edit_post_path(@post), :class => 'admin-link' %>
+			<%= link_to 'Back', posts_path, :class => 'admin-link' %>
+		<% end %>
 	</footer>
 	<section id="comments">
 		<section id="new-comment">
