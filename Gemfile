@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'authlogic'
 gem 'rake', '0.8.7'
 gem 'friendly_id', '~> 3.2.1'
+gem 'dalli'
 # Use unicorn as the web server
 # gem 'unicorn'
 
