@@ -1,4 +1,15 @@
 class PostsController < ApplicationController
+  
+  def feed
+    @title = "Japhex Blog Posts"
+    @news_items = Post.order("updated_at desc")
+    @updated = @news_items.first.updated_at unless @news_items.empty?
+    respond_to do |format|
+      format.atom { render :layout => false }
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+    end
+  end  
+  
   # GET /posts
   # GET /posts.xml
   def index

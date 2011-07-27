@@ -6,7 +6,7 @@ JaphexPortfolio::Application.routes.draw do
   match 'logout' => "user_sessions#destroy", :as => :logout
   resources :users
   root :to => "posts#index"
-  match '/:id' => 'posts#show'
+  match '/feed' => 'posts#feed', :as => :feed, :defaults => { :format => 'atom' }  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
