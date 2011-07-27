@@ -3,11 +3,11 @@
 		<header>
 		  <hgroup>
 				<h2><%= link_to post.title, post %></h2>
-		    <h3><%= post.date %></h3>
+		    <h3><%= post.date %> | <%= post.comments.count %> comments</h3>
 		  </hgroup>
 		</header>
 		<section>
-	  	<%=raw post.content %>
+	  	<%=raw post.content.truncate(520) %>
 		</section>
 		<% if current_user %>
 		<footer>
@@ -15,7 +15,7 @@
 	    <%= link_to 'Edit', edit_post_path(post), :class => 'admin-link' %>
 			<%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete, :class => 'admin-link' %>
 		</footer>
-		<% end %>
+		<% end %> 
 	</article>
 <% end %>
 
