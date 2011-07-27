@@ -75,21 +75,17 @@ function initCommentsWatermarkClick(){
 	$('#new-comment input, #new-comment textarea').blur(function(){
 		if($(this).val() == ""){
 			$(this).removeClass('hascontent');
-			initCommentsWatermark();			
+			initCommentsWatermark();
 		}
 		else {
 		}
+		if ($('.hascontent').length > 3){
+			$('#comment_submit').removeAttr('disabled').removeClass('invalid');
+		}		
+		else {
+			$('#comment_submit').attr('disabled','disabled').addClass('invalid');			
+		}
 	});	
-	$('#comment_submit').click(function(){
-		$('#new-comment input, #new-comment textarea').each(function(){
-			if ($(this).hasClass('hascontent')){
-			}
-			else{
-				$(this).addClass('invalid');
-				return false;
-			}
-		});
-	});
 }
 
 function initMyTwitter(){

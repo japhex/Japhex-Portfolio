@@ -20,5 +20,5 @@
   <div>
     <%= f.text_area :comment, :alt => "What you got to say?" %>
   </div>
-  <%= f.submit %>
+  <%= f.submit "Submit", :disabled => true, :class => "invalid" %>
 <% end %>

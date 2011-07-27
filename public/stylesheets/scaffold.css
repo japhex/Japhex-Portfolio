@@ -50,8 +50,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 #new-comment input {width:170px;height:25px;border-radius:3px;border:1px solid #ccc;color:#ccc;padding-left:10px;display:block;margin:3px 0;}
 #new-comment textarea {border:1px solid #ccc;border-radius:3px;color:#ccc;padding:8px 10px;margin:3px 0;width:290px;font-family:arial;font-size:0.7em;}
 #new-comment .hascontent {color:#000;}
-#new-comment #comment_submit {color:#000;clear:both;position:absolute;top:110px;width:183px;background:#999;}
-input.invalid {border:1px solid red;}
+#new-comment #comment_submit {color:#000;clear:both;position:absolute;top:110px;width:183px;background:#999;cursor:pointer;}
+#comments #new-comment .invalid {background:#cecece;color:#bebebe;}
 
 #promo {float:left;width:250px;margin:20px 0 0 10px;}
 #promo h2 {font-family:'Goudy Bookletter 1911';font-weight:normal;text-transform:uppercase;font-size:1.5em;width:240px;margin-bottom:5px;}
