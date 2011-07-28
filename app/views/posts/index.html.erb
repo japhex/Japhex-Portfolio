@@ -6,8 +6,8 @@
 		    <h3><%= post.date %> | <%= post.comments.count %> comments</h3>
 		  </hgroup>
 		</header>
-		<section>
-	  	<%=raw post.content.truncate(520) %>
+		<section class="post">
+	  	<%= strip_tags(post.content.truncate(520)) %>
 		</section>
 		<% if current_user %>
 		<footer>

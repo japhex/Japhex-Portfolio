@@ -35,6 +35,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #content section strong {display:block;text-transform:uppercase;font-size:0.9em;font-weight:normal;text-decoration:underline;padding:5px 0;}
 #content section strong.invalid {color:red;}
 #content section strong.valid {color:green;} 
+#content section.post {font-size:0.9em;}
 #content footer {font-size:0.8em;text-transform:uppercase;padding-bottom:15px;border-bottom:1px dashed #cecece;overflow:hidden;}
 
 #content #comments {border:0;background:none;}
