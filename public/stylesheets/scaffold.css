@@ -31,6 +31,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #content section {margin:10px 2px;padding:5px;font-family:arial;border:1px dashed #cecece;border-radius:5px;background:#eee;padding:10px;}
 #content section p {padding:10px 0;font-size:0.9em;}
 #content section h4 {font-size:0.9em;text-transform:uppercase;}
+#content section img {display:block;margin:10px 0;width:100px;}
 #content section strong {display:block;text-transform:uppercase;font-size:0.9em;font-weight:normal;text-decoration:underline;padding:5px 0;}
 #content section strong.invalid {color:red;}
 #content section strong.valid {color:green;} 
