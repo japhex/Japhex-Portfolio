@@ -86,6 +86,18 @@ function initCommentsWatermarkClick(){
 			$('#comment_submit').attr('disabled','disabled').addClass('invalid');			
 		}
 	});	
+	$('#comment_submit').click(function(){
+		var captcha = $('#captcha');
+		var captchaValue = captcha.val();
+
+		if (captchaValue == 'Bon Jovi' || captchaValue == 'bon jovi' || captchaValue == 'bon Jovi' || captchaValue == 'Bon jovi' || captchaValue == 'bonjovi' || captchaValue == 'Bonjovi') {
+			captcha.removeClass('wrong-captcha');		
+		}
+		else {
+			captcha.addClass('wrong-captcha');
+			return false;			
+		}
+	});
 }
 
 function initMyTwitter(){

@@ -20,5 +20,9 @@
   <div>
     <%= f.text_area :comment, :alt => "What you got to say?" %>
   </div>
-  <%= f.submit "Submit", :disabled => true, :class => "invalid" %>
+	<div class="captcha">
+		<label for="captcha">Who sang: <strong>"woooahhh we're half way there, WOAAHHHH OHH LIVING ON A PRAYER!"</strong></label>
+		<input id="captcha" name="captcha" />
+  </div>
+	<%= f.submit "Submit", :disabled => true, :class => "invalid" %>
 <% end %>
