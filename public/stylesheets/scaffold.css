@@ -79,3 +79,4 @@ table {border-collapse: collapse;border-spacing: 0;}
 #login-form label {font-family:georgia;font-size:1.4em;width:150px;text-transform:lowercase;display:block;float:left;font-style:italic;}
 #login-form input {display:block;float:left;}
 #login-form p {overflow:hidden;}
+form.edit_comment {font-size:0.8em;margin-top:7px;}

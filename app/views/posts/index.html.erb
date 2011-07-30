@@ -3,7 +3,13 @@
 		<header>
 		  <hgroup>
 				<h2><%= link_to post.title, post %></h2>
-		    <h3><%= post.date %> | <%= post.comments.count %> comments</h3>
+				<% commentCount = 0 %>
+				<% post.comments.each do |f| %>
+					<% if f.approved %>
+						<% commentCount = commentCount + 1 %>
+					<% end %>
+				<% end %>				
+		    <h3><%= post.date %> | <%= commentCount %> comments</h3>
 		  </hgroup>
 		</header>
 		<section class="post">
