@@ -20,6 +20,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 #header ul {width:100%;overflow:hidden;padding:11px 0 0 11px;}
 #header li {display:block;float:left;height:50px;width:50px;border-radius:5px;margin:1px;overflow:hidden;}
 #header li img {width:100px;}
+.twitter-share-button {position:relative;top:3px;width:97px !important;}
+.fbook-like {position:relative;top:4px;}
 #twitter {background:#5590d8;color:#fff;font-weight:bold;font-family:arial;padding:6px;border-radius:10px;text-decoration:none;display:block;margin-top:5px;font-size:0.8em;border:1px solid #999;text-align:center;}
 
 #content {min-height:500px;width:700px;float:left;}
