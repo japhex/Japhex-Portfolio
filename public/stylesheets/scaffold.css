@@ -80,3 +80,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 #login-form input {display:block;float:left;}
 #login-form p {overflow:hidden;}
 form.edit_comment {font-size:0.8em;margin-top:7px;}
+#all-comments-title {font-size:2em;font-family:'Goudy Bookletter 1911';margin-bottom:15px;}
+.all-comments {margin:10px 0;font-family:'Goudy Bookletter 1911';border-bottom:1px dashed #999;padding-bottom:10px;}
+.all-comments a {color:#666;}
+.comment-content {color:red;margin:5px 0 3px 0;font-size:1.2em;}
