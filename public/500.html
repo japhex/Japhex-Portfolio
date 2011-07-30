@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <title>Oh F... | Japhex Blog</title>
+	<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&v2' rel='stylesheet' type='text/css'>
   <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+	/* Reset Styles */
+		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+		body {line-height: 1;}
+		ol, ul {list-style: none;}
+		blockquote, q {quotes: none;}
+		blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+		:focus {outline: 0;}
+		ins {text-decoration: none;}
+		del {text-decoration: line-through;}
+		table {border-collapse: collapse;border-spacing: 0;}
+	
+    body {
+			background: rgb(254,255,232); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(254,255,232,1) 0%, rgba(214,219,191,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,232,1)), color-stop(100%,rgba(214,219,191,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(254,255,232,1) 0%,rgba(214,219,191,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: linear-gradient(top, rgba(254,255,232,1) 0%,rgba(214,219,191,1) 100%); /* W3C */
+			text-align:center;font-family:'Goudy Bookletter 1911';min-height:700px;
+		}
+    div.dialog {width:800px;margin:0 auto;padding:80px 0 20px 0;}
+    h1 {font-size:5em;}
+		a {color:#000;font-size:3em;}
+		p {border-top:1px dashed #666;border-bottom:1px dashed #666;padding:20px 0;margin:40px 0 0 0;}
+		#social-links {background:#cecece;border-radius:5px;padding:20px;width:150px;margin:15px auto 0;}
+		#social-links ul {overflow:hidden;}
+		#social-links li {float:left;margin:0 2px;}
   </style>
 </head>
 
 <body>
   <!-- This file lives in public/500.html -->
   <div class="dialog">
-    <h1>We're sorry, but something went wrong.</h1>
-    <p>We've been notified about this issue and we'll take a look at it shortly.</p>
+    <h1>Dude, I'm really sorry but something's gone wrong...</h1>
+    <p>"I'll go hit it with a spanner." - Jamie Lawrence 2011</p>
   </div>
+	<a href="/">Homepage</a>
+	<section id="social-links">
+		<ul>
+			<li><a href="http://www.facebook.com/japhex"><img src="/images/facebook.png" alt="My Facebook Page" /></a></li>
+			<li><a href="http://www.twitter.com/japhex"><img src="/images/twitter.png" alt="My Twitter Feed" /></a></li>
+			<li><a href="http://uk.linkedin.com/pub/jamie-lawrence/32/671/518"><img src="/images/linkedin.png" alt="My LinkedIn Profile" /></a></li>
+			<li><a href="https://github.com/japhex"><img src="/images/github.png" alt="My Github Repo" /></a></li>
+		</ul>
+	</section>	
 </body>
 </html>
