@@ -30,7 +30,7 @@ function initFlickrSource(){
 	});		
 	$.ajax({ 
 		type: "GET", 
-		url: "http://api.flickr.com/services/rest/?method=flickr.photos.search&size=t&text=red%20dead%20redemption&per_page=20&format=json&api_key=fa115b5e0df4444decbaba5387d3acd1&jsoncallback=?", 
+		url: "http://api.flickr.com/services/rest/?method=flickr.photos.search&size=t&text=metallica&per_page=20&format=json&api_key=fa115b5e0df4444decbaba5387d3acd1&jsoncallback=?", 
 		dataType: "jsonp", 
 		success: function(data){
 			var len=data.photos.photo.length;
