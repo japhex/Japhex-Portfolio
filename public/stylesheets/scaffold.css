@@ -34,8 +34,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 #content section p {padding:10px 0;font-size:0.9em;}
 #content section h4 {font-size:0.9em;text-transform:uppercase;}
 #content section img {display:block;margin:10px 0;width:100px;}
-#content section a.single-post {position:relative;display:block;margin-bottom:10px;color:#5590D8;text-align:center;border:1px solid #999;padding:5px;background:#fff;text-decoration:none;}
-#content section a.single-post::after {content:"Link";position:absolute;top:-5px;right:-5px;background:#5590D8;padding:3px 10px;color:#fff;text-transform:uppercase;border-radius:15px;font-size:0.8em;}
+#content section.single-post a {position:relative;display:block;margin-bottom:10px;color:#5590D8;text-align:center;border:1px solid #999;padding:5px;background:#fff;text-decoration:none;}
+#content section.single-post a::after {content:"Link";position:absolute;top:-5px;right:-5px;background:#5590D8;padding:3px 10px;color:#fff;text-transform:uppercase;border-radius:15px;font-size:0.8em;}
 #content section strong {display:block;text-transform:uppercase;font-size:0.9em;font-weight:normal;text-decoration:underline;padding:5px 0;}
 #content section strong.invalid {color:red;}
 #content section strong.valid {color:green;} 
