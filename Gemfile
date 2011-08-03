@@ -11,6 +11,7 @@ gem 'authlogic'
 gem 'rake', '0.8.7'
 gem 'friendly_id', '~> 3.2.1'
 gem 'dalli'
+gem 'will_paginate', '~> 3.0.pre4'
 # Use unicorn as the web server
 # gem 'unicorn'
 

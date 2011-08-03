@@ -1,8 +1,9 @@
+<%= will_paginate @posts %>
 <% @posts.each do |post| %>
 	<article>
 		<header>
 		  <hgroup>
-				<h2><%= link_to post.title, post %></h2>
+				<h2 <% if post.category != "" %>class="<%=post.category%>-cat"<% end %>><%= link_to post.title, post %></h2>
 				<% commentCount = 0 %>
 				<% post.comments.each do |f| %>
 					<% if f.approved %>
@@ -28,3 +29,4 @@
 <% if current_user %>
 	<%= link_to 'New Post', new_post_path, :class => 'new-post' %>
 <% end %>
+<%= will_paginate @posts %>
