@@ -41,7 +41,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 #content section.single-post a::after {content:"Link";position:absolute;top:-5px;right:-5px;background:#5590D8;padding:3px 10px;color:#fff;text-transform:uppercase;border-radius:15px;font-size:0.8em;}
 #content section strong {display:block;text-transform:uppercase;font-size:0.9em;font-weight:normal;text-decoration:underline;padding:5px 0;}
 #content section strong.invalid {color:red;}
-#content section strong.valid {color:green;} 
+#content section strong.valid {color:green;}
+#content section strong.highlight {display:inline;font-weight:bold;text-decoration:none;text-transform:lowercase;color:red;} 
 #content section.post {font-size:0.9em;}
 #content footer {font-size:0.8em;text-transform:uppercase;padding-bottom:15px;border-bottom:1px dashed #cecece;overflow:hidden;}
 
